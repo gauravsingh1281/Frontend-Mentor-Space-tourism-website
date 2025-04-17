@@ -10,19 +10,50 @@
 </head>
 
 <body>
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <main
+    class=" w-full h-[650px] bg-no-repeat bg-cover bg-center  bg-[url(/assets/home/background-home-mobile.jpg)] md:bg-[url(/assets/home/background-home-tablet.jpg)] lg:bg-[url(/assets/home/background-home-desktop.jpg)]">
+    <header class="w-full">
+      <!-- Navbar -->
+      <nav class="w-full max-h-20 flex justify-between items-center px-4 py-4 relative">
+        <!-- logo -->
+        <img class="logo w-[35px] h-[35px]" src="./assets/shared/logo.svg" alt="logo">
+        <!-- hamburger-->
+        <img id="mobile-nav-show-btn" src="./assets/shared/icon-hamburger.svg" alt="icon-hamburger"
+          class="md:hidden lg:hidden">
+        <!-- Mobile Navlink -->
+        <div class="mobile-nav-link hidden md:hidden lg:hidden text-white  justify-start items-start flex-col absolute w-[170px]
+     bg-gradient-to-r from-BLUE-900 h-[650px] top-0 right-0 px-6 py-10 gap-5 backdrop-blur-3xl ">
+          <!-- close btn -->
+          <img id="mobile-nav-close-btn" class="absolute top-3 right-3" src="./assets/shared/icon-close.svg"
+            alt="icon-close">
+          <a href="#">00 Home </a>
+          <a href="#">01 Destination</a>
+          <a href="#">02 Crew</a>
+          <a href="#">03 Technology</a>
+        </div>
+      </nav>
+      <!-- heading text and description -->
+      <div class="w-full h-full flex justify-start items-center gap-6 flex-col  px-8 py-4">
+        <p class="text-[12px] text-BLUE-300 uppercase font-Barlow-Condensed tracking-[2px]">So, you want to travel to
+        </p>
+        <h1 class="text-6xl text-white uppercase font-Bellefair ">Space</h1>
+        <p class="text-[12px] text-BLUE-300 font-Barlow text-center ">Let’s face it; if you want to
+          go
+          to space,
+          you might as
+          well genuinely go to
+          outer space and not hover kind of on the edge of it. Well sit back, and relax
+          because we’ll give you a truly out of this world experience!</p>
+      </div>
+    </header>
+    <div class="flex justify-center items-center w-[175px] h-[175px] rounded-full mx-auto mt-6 bg-BLUE-300">
+      <button
+        class="bg-white h-8 w-8 rounded-full p-12 flex justify-center items-center uppercase font-Bellefair group">Explore</button>
+    </div>
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to
-  outer space and not hover kind of on the edge of it. Well sit back, and relax
-  because we’ll give you a truly out of this world experience!
+  </main>
 
-  Explore
-
+  <script src="./script.js"></script>
 </body>
 
 </html>

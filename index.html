@@ -11,25 +11,31 @@
 
 <body>
   <main
-    class=" w-full h-[650px] bg-no-repeat bg-cover bg-center  bg-[url(/assets/home/background-home-mobile.jpg)] md:bg-[url(/assets/home/background-home-tablet.jpg)] lg:bg-[url(/assets/home/background-home-desktop.jpg)]">
+    class=" w-full h-[650px] bg-no-repeat bg-cover bg-center  bg-[url(/assets/home/background-home-mobile.jpg)] md:bg-[url(/assets/home/background-home-tablet.jpg)] lg:bg-[url(/assets/home/background-home-desktop.jpg)] overflow-hidden">
     <header class="w-full">
       <!-- Navbar -->
-      <nav class="w-full max-h-20 flex justify-between items-center px-4 py-4 relative">
+      <nav class="w-full max-h-20 flex justify-between items-center px-4 py-4 relative ">
         <!-- logo -->
         <img class="logo w-[35px] h-[35px]" src="./assets/shared/logo.svg" alt="logo">
         <!-- hamburger-->
         <img id="mobile-nav-show-btn" src="./assets/shared/icon-hamburger.svg" alt="icon-hamburger"
-          class="md:hidden lg:hidden">
+          class="md:hidden lg:hidden cursor-pointer">
         <!-- Mobile Navlink -->
-        <div class="mobile-nav-link hidden md:hidden lg:hidden text-white  justify-start items-start flex-col absolute w-[170px]
-     bg-gradient-to-r from-BLUE-900 h-[650px] top-0 right-0 px-6 py-10 gap-5 backdrop-blur-3xl ">
+        <div
+          class="mobile-nav-link flex md:hidden lg:hidden text-white  justify-start items-start flex-col absolute w-[175px]
+     bg-gradient-to-r from-BLUE-900 h-[650px] top-0 -right-[100%] px-6 py-10 gap-5 backdrop-blur-3xl  transition-all ease-in duration-400 z-50">
           <!-- close btn -->
-          <img id="mobile-nav-close-btn" class="absolute top-3 right-3" src="./assets/shared/icon-close.svg"
-            alt="icon-close">
-          <a href="#">00 Home </a>
-          <a href="#">01 Destination</a>
-          <a href="#">02 Crew</a>
-          <a href="#">03 Technology</a>
+          <img id="mobile-nav-close-btn" class="absolute top-3 right-3 cursor-pointer"
+            src="./assets/shared/icon-close.svg" alt="icon-close">
+          <a href="#" class="font-Barlow uppercase font-light tracking-wide"><span
+              class="font-bold text-white font-Barlow">00</span> Home </a>
+          <a href="#" class="font-Barlow uppercase font-light tracking-wide"><span
+              class="font-bold text-white font-Barlow">01</span> Destination</a>
+          <a href="#" class="font-Barlow uppercase font-light tracking-wide"><span
+              class="font-bold text-white font-Barlow">02</span> Crew</a>
+          <a href="#" class="font-Barlow uppercase font-light tracking-wide"><span
+              class="font-bold text-white font-Barlow">03</span> Technology</a>
+
         </div>
       </nav>
       <!-- heading text and description -->
@@ -46,11 +52,13 @@
           because we’ll give you a truly out of this world experience!</p>
       </div>
     </header>
-    <div class="flex justify-center items-center w-[175px] h-[175px] rounded-full mx-auto mt-6 bg-BLUE-300">
-      <button
-        class="bg-white h-8 w-8 rounded-full p-12 flex justify-center items-center uppercase font-Bellefair group">Explore</button>
+    <div class="relative flex justify-center items-center flex-col z-10">
+      <div id="explore-btn-outer"
+        class="flex justify-center items-center w-[175px] h-[175px] rounded-full mx-auto mt-6 bg-white opacity-0 transition-all ease-in-out duration-200">
+      </div>
+      <button id="explore-btn"
+        class="bg-white h-8 w-8 rounded-full p-12 flex justify-center items-center uppercase font-Bellefair absolute top-[62px] cursor-pointer">Explore</button>
     </div>
-
   </main>
 
   <script src="./script.js"></script>

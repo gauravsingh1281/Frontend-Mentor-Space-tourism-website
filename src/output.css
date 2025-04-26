@@ -366,6 +366,9 @@
   .bg-BLUE-300 {
     background-color: var(--color-BLUE-300);
   }
+  .bg-red-200 {
+    background-color: var(--color-red-200);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -497,6 +500,9 @@
   .opacity-0 {
     opacity: 0%;
   }
+  .opacity-100 {
+    opacity: 100%;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -531,6 +537,26 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
+  .md\:top-\[67px\] {
+    @media (width >= 48rem) {
+      top: 67px;
+    }
+  }
+  .md\:bottom-\[112px\] {
+    @media (width >= 48rem) {
+      bottom: 112px;
+    }
+  }
+  .md\:left-\[43px\] {
+    @media (width >= 48rem) {
+      left: 43px;
+    }
+  }
+  .md\:mt-3 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 3);
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -556,6 +582,11 @@
       height: 100%;
     }
   }
+  .md\:w-3\/4 {
+    @media (width >= 48rem) {
+      width: calc(3/4 * 100%);
+    }
+  }
   .md\:w-\[20\%\] {
     @media (width >= 48rem) {
       width: 20%;
@@ -579,6 +610,11 @@
   .md\:w-\[210px\] {
     @media (width >= 48rem) {
       width: 210px;
+    }
+  }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
     }
   }
   .md\:flex-row {
@@ -621,6 +657,18 @@
       text-align: left;
     }
   }
+  .md\:text-6xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .md\:text-8xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
+  }
   .md\:text-9xl {
     @media (width >= 48rem) {
       font-size: var(--text-9xl);
@@ -650,6 +698,21 @@
       top: 67px;
     }
   }
+  .lg\:bottom-0 {
+    @media (width >= 64rem) {
+      bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:left-\[43px\] {
+    @media (width >= 64rem) {
+      left: 43px;
+    }
+  }
+  .lg\:left-\[58px\] {
+    @media (width >= 64rem) {
+      left: 58px;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -668,6 +731,11 @@
   .lg\:h-\[210px\] {
     @media (width >= 64rem) {
       height: 210px;
+    }
+  }
+  .lg\:h-\[650px\] {
+    @media (width >= 64rem) {
+      height: 650px;
     }
   }
   .lg\:h-full {
@@ -793,6 +861,11 @@
     @media (width >= 64rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .lg\:opacity-0 {
+    @media (width >= 64rem) {
+      opacity: 0%;
     }
   }
 }

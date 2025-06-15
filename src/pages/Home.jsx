@@ -2,8 +2,8 @@ import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <main className=" w-full min-h-screen  bg-no-repeat bg-cover bg-center  bg-[url(home/background-home-mobile.jpg)] md:bg-[url(home/background-home-tablet.jpg)] lg:bg-[url(home/background-home-desktop.jpg)] overflow-hidden">
-      <section className="w-full h-full">
+    <main className=" w-full min-h-screen  bg-no-repeat bg-cover bg-center  bg-[url(home/background-home-mobile.jpg)] md:bg-[url(home/background-home-tablet.jpg)] lg:bg-[url(home/background-home-desktop.jpg)] overflow-hidden  ">
+      <section className="w-full  min-h-screen flex justify-between flex-col pb-8 ">
         {/* Navbar */}
         <Header />
         {/* heading and explore btn */}

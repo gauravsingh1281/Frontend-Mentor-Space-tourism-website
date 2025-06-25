@@ -10,7 +10,7 @@ export default function RootRoute() {
     <Routes>
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
-        <Route path="/destination" element={<Destination />} />
+        <Route path="/destination" element={<Destination />}></Route>
         <Route path="/crew" element={<Crew />} />
         <Route path="/technology" element={<Technology />} />
       </Route>

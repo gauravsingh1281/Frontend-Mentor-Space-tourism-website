@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import { NavLink } from "react-router-dom";
 
 const Destination = () => {
   return (
@@ -29,30 +30,30 @@ const Destination = () => {
           <div className="lg:w-1/2 flex justify-center items-center lg:items-start flex-col gap-8">
             {/* <!-- Destination links --> */}
             <div className="flex justify-center items-center gap-6">
-              <a
-                href="/pages/destination/destination-moon.html"
+              <NavLink
+                to="moon"
                 className="font-Barlow uppercase font-light tracking-wide text-BLUE-300"
               >
                 Moon
-              </a>
-              <a
-                href="/pages/destination/destination-mars.html"
+              </NavLink>
+              <NavLink
+                to="mars"
                 className="font-Barlow uppercase font-light tracking-wide text-BLUE-300"
               >
                 Mars
-              </a>
-              <a
-                href="/pages/destination/destination-europa.html"
+              </NavLink>
+              <NavLink
+                to="europa"
                 className="font-Barlow uppercase font-light tracking-wide text-BLUE-300"
               >
                 Europa
-              </a>
-              <a
-                href="/pages/destination/destination-titan.html"
+              </NavLink>
+              <NavLink
+                to="titan"
                 className="font-Barlow uppercase font-light tracking-wide text-BLUE-300"
               >
                 Titan
-              </a>
+              </NavLink>
             </div>
             <h1 className="text-white font-Bellefair text-6xl uppercase font-bold ">
               Europa

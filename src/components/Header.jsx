@@ -10,29 +10,58 @@ export default function Header() {
         alt="logo"
       />
       {/*  Desktop Navlink*/}
-      <nav className=" hidden desktop-links   h-full py-4 px-2 md:flex lg:flex justify-center items-center gap-8 md:w-3/4 lg:w-1/2 bg-gradient-to-r from-BLUE-300/[.1] to-black/[.1] backdrop-blur-xl ">
+      <nav className=" hidden desktop-links   h-full py-4  md:flex lg:flex justify-center items-center gap-8 md:w-3/4 lg:w-1/2 bg-gradient-to-r from-BLUE-300/[.1] to-black/[.1] backdrop-blur-xl ">
         <NavLink
           to="/"
-          className="font-Barlow uppercase font-light tracking-wide text-white"
+          className={({ isActive }) =>
+            `relative font-Barlow uppercase font-light tracking-wide text-white hover:after:content-[''] hover:after:absolute hover:after:bottom-[-15px] hover:after:left-0 hover:after:h-[3px] hover:after:w-full hover:after:bg-gray-500 cursor-pointer
+     ${
+       isActive
+         ? "after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:h-[3px] after:w-full after:bg-white"
+         : ""
+     }`
+          }
         >
-          <span className="font-bold text-white font-Barlow">00</span> Home{" "}
+          <span className="font-bold text-white font-Barlow">00</span> Home
         </NavLink>
+
         <NavLink
           to="/destination"
-          className="font-Barlow uppercase font-light tracking-wide text-white"
+          className={({ isActive }) =>
+            `relative font-Barlow uppercase font-light tracking-wide text-white hover:after:content-[''] hover:after:absolute hover:after:bottom-[-15px] hover:after:left-0 hover:after:h-[3px] hover:after:w-full hover:after:bg-gray-500 cursor-pointer
+     ${
+       isActive
+         ? "after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:h-[3px] after:w-full after:bg-white"
+         : ""
+     }`
+          }
         >
           <span className="font-bold text-white font-Barlow">01</span>{" "}
           Destination
         </NavLink>
         <NavLink
           to="/crew"
-          className="font-Barlow uppercase font-light tracking-wide text-white"
+          className={({ isActive }) =>
+            `relative font-Barlow uppercase font-light tracking-wide text-white hover:after:content-[''] hover:after:absolute hover:after:bottom-[-15px] hover:after:left-0 hover:after:h-[3px] hover:after:w-full hover:after:bg-gray-500
+     ${
+       isActive
+         ? "after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:h-[3px] after:w-full after:bg-white"
+         : ""
+     }`
+          }
         >
           <span className="font-bold text-white font-Barlow">02</span> Crew
         </NavLink>
         <NavLink
           to="/technology"
-          className="font-Barlow uppercase font-light tracking-wide text-white"
+          className={({ isActive }) =>
+            `relative font-Barlow uppercase font-light tracking-wide text-white hover:after:content-[''] hover:after:absolute hover:after:bottom-[-15px] hover:after:left-0 hover:after:h-[3px] hover:after:w-full hover:after:bg-gray-500
+     ${
+       isActive
+         ? "after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:h-[3px] after:w-full after:bg-white"
+         : ""
+     }`
+          }
         >
           <span className="font-bold text-white font-Barlow">03</span>{" "}
           Technology
